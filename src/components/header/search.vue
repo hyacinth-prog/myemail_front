@@ -72,10 +72,11 @@ export default {
     },
 
     //dsdasd
+    //cxcsd
     querySearchAsync(queryString, cb) {
       var restaurants = this.restaurants;
       var results = queryString ? restaurants.filter(this.createStateFilter(queryString)) : restaurants;
-
+      let test=1;
       clearTimeout(this.timeout);
       this.timeout = setTimeout(() => {
         cb(results);
